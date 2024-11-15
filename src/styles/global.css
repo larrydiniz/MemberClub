@@ -1,0 +1,50 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    /* Color styles */
+  --main---pink: rgba(214, 88, 179, 1);
+  --main---green: rgba(69, 180, 66, 1);
+  --base---white: rgba(255, 255, 255, 1);
+  --base---gray-100: rgba(244, 241, 242, 1);
+  --base---gray-200: rgba(233, 231, 233, 1);
+  --base---gray-300: rgba(223, 220, 223, 1);
+  --base---gray-400: rgba(206, 202, 205, 1);
+  --base---gray-500: rgba(117, 108, 113, 1);
+  --base---gray-600: rgba(74, 68, 72, 1);
+  --base---gray-700: rgba(51, 43, 49, 1);
+
+  /*Text Style*/
+  --font-family: "Oxygen", serif;
+  --title-md: 700 1.5rem/140% var(--font-family);
+  --title-sm: 700 1.125rem/140% var(--font-family);
+  --subtitle-md: 700 .875rem/140% var(--font-family);
+  --subtitle-sm: 700 .75rem/140% var(--font-family);
+  --text-md: 400 1rem/140% var(--font-family);
+  --text-sm: 400 .875rem/140% var(--font-family);
+  --text-xs: 400 .75rem/140% var(--font-family);
+}
+
+body {
+  padding: 0 12px;
+  background-color: var(--base---gray-200);
+  font: var(--text-sm);
+  color: var(--base---gray-500);
+  max-width: 910px;
+  margin: auto;
+}
+
+input {
+  background: none;
+  color: inherit;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  outline-offset: none;
+  border: none;
+}

@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 6.25rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (width >=960px) {
+  header img {
+    width: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}

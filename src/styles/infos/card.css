@@ -1,0 +1,58 @@
+#card {
+  padding: 24px 20px;
+}
+
+#card .card-infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#card .card-infos h3 {
+  text-transform: uppercase;
+  font: var(--subtitle-sm);
+}
+
+#card .card-infos #ID {
+  height: fit-content;
+  font: var(--subtitle-sm);
+  background-color: var(--base---gray-300);
+  padding: 3.5px 8px;
+  border-radius: 24px;
+  text-wrap: nowrap;
+}
+
+#card .card-infos div p {
+  font: var(--text-xs);
+}
+
+.checks {
+  min-height: 120px;
+  gap: 8px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: 
+  "item item item item item"
+  "item item item item item";
+}
+
+.check-item {
+  grid-area: 'item';
+  aspect-ratio: 1 / 1;
+  background-color: var(--base---gray-200);
+  border-radius: 12px;
+}
+
+.gift {
+  background-image: url("../../assets/icons/gift.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
+.checked {
+  background-image: url("../../assets/PinCheck.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
