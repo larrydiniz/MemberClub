@@ -21,24 +21,20 @@
 
     <form class="form">
       <div class="input">
-        <label for="id-search">ID do cartão</label>
-        <input id="id-search" type="text" placeholder="ID do cartão" />
+        <label for="inputSearch">ID do cartão</label>
+        <input id="inputSearch" type="text" placeholder="ID do cartão" />
         <button type="submit">
           <img src="/src/assets/icons/arrow.svg" alt="buscar" />
         </button>
       </div>
     </form>
 
-    <section id="infos">
+    <section id="infos" class="hidden">
       <section id="profile">
-        <div class="img">
-          <img
-            src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          />
-        </div>
+        <div class="img"></div>
         <div class="info">
-          <h3>Natália Miranda</h3>
-          <p>Cliente desde 18/09/2023</p>
+          <h3></h3>
+          <p></p>
         </div>
       </section>
       <section id="card">
@@ -47,16 +43,16 @@
             <h3>Cartão Fidelidade</h3>
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
-          <p id="ID">ID: 124-537-835-230</p>
+          <p id="ID"></p>
         </div>
         <div class="checks">
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
-          <div class="check-item checked"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
+          <div class="check-item"></div>
           <div class="check-item"></div>
           <div class="check-item"></div>
           <div class="check-item gift"></div>
@@ -64,16 +60,33 @@
       </section>
       <section id="count">
         <div class="info">
-          <h3>Natália Miranda</h3>
-          <p>Cliente desde 18/09/2023</p>
+          <span>
+            <h3>3</h3>
+            <p>cortes restantes</p>
+          </span>
+          <div class="bar-info">
+            <div class="bar">
+              <div></div>
+            </div>
+            <span></span>
+          </div>
         </div>
         <div class="img">
-          <img
-            src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          />
+          <img src="src/assets/PinGift.png" />
         </div>
       </section>
-      <section id="visit-history"></section>
+      <section id="visit-history">
+        <div class="header">
+          <h3>Histórico</h3>
+          <span></span>
+        </div>
+        <ul></ul>
+      </section>
     </section>
+
+    <div class="gift-modal hidden">
+      <p>Parabéns! Seu próximo corte é gratuito!</p>
+      <img src="src/assets/PinGift.png" />
+    </div>
   </body>
 </html>

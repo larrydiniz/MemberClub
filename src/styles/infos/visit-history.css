@@ -1,0 +1,46 @@
+#visit-history {
+  padding: 24px 20px;
+}
+
+#visit-history .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#visit-history .header h3 {
+  text-transform: uppercase;
+  color: var(--base---gray-600);
+  font: var(--subtitle-sm);
+}
+
+#visit-history .header span {
+  font: var(--text-xs);
+}
+
+#visit-history ul {
+  margin-top: 16px;
+  border-top: 1px solid var(--base---gray-200);
+}
+
+#visit-history ul li {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#visit-history ul li div {
+  width: 32px;
+  height: 32px;
+  background-color: var(--main---green);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width >=960px) {
+  #visit-history {
+    height: 320px;
+    overflow: auto;
+  }
+}

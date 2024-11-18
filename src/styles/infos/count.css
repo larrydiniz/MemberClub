@@ -1,38 +1,132 @@
 #count {
   padding: 15px;
   display: flex;
-  gap: 16px;
+  gap: 24px;
   align-items: center;
 }
-/* 
-linear-gradient(90deg, rgba(45,170,110,1) 0%, rgba(45,170,170,1) 33%, rgba(133,108,207,1) 66%, rgba(214,88,179,1) 100%);
-*/
-#count .img {
-  width: calc(3.5rem + 10px);
-  height: calc(3.5rem + 10px);
-  background: linear-gradient(140deg, rgba(214,88,179,1) 0%, rgba(133,108,207,1) 33%, rgba(45,170,170,1) 66%, rgba(45,170,110,1) 100%);
-  border-radius: 10px;
+
+#count .info {
+  flex-grow: 1;
+}
+
+#count span {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  gap: 7px;
 }
 
-#count img {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 10px;
-  object-fit: cover;
-  box-sizing: initial;
-  border: 3px solid var(--base---gray-100);
-}
-
-#count h3 {
+#count span h3 {
   font: var( --title-sm);
   color: var(--base---gray-600);
+}
+
+#count span p {
+  width: fit-content;
+  font: var( --text-sm);
+  color: var(--base---gray-500);
 }
 
 #count p {
   font: var( --title-xs);
   color: var(--base---gray-500);
   margin-top: 4px;
+}
+
+#count .img {
+ height: 56px;
+ width: 56px;
+ border-radius: 100%;
+ background-color: var(--base---gray-300);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#count img {
+  width: 25px;
+}
+
+.bar-info {
+  margin-top: 4px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bar-info .bar {
+  flex-grow: 1;
+  height: 8px;
+  border-radius: 100px;
+  background-color: var(--base---gray-300);
+}
+
+.bar-info span {
+  font: var(--text-xs);
+  color: var(--base---gray-500);
+}
+
+#size0, #size1, #size2, #size3, #size4, #size5, #size6, #size7, #size8, #size9, #size10 {
+  height: 8px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, rgba(45,170,110,1) 0%, rgba(45,170,170,1) 33%, rgba(133,108,207,1) 66%, rgba(214,88,179,1) 100%)
+}
+
+.bar #size0 {
+  width: 0%;
+}
+.bar #size1 {
+  width: 10%;
+}
+.bar #size2 {
+  width: 20%;
+}
+.bar #size3 {
+  width: 30%;
+}
+.bar #size4 {
+  width: 40%;
+}
+.bar #size5 {
+  width: 50%;
+}
+.bar #size6 {
+  width: 60%;
+}
+.bar #size7 {
+  width: 70%;
+}
+.bar #size8 {
+  width: 80%;
+}
+.bar #size9 {
+  width: 90%;
+}
+.bar #size10 {
+  width: 100%;
+}
+
+@media (width >=960px) {
+  #count {
+   gap: 32px;
+ }
+
+  #count span h3 {
+    font: var( --title-md);
+  }
+
+  #count span p {
+    font: var( --text-md);
+  }
+ #count .img {
+   height: 72px;
+   width: 72px;
+  }
+  
+  #count img {
+    width: 36px;
+  }
+  
+  .bar-info {
+    margin-top: 12px;
+  }
 }

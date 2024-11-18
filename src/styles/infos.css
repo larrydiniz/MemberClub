@@ -1,4 +1,4 @@
-#infos {
+#infos.show {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,56 @@
 }
 
 @media (width >=960px) {
-  #infos {
-    margin-top: 64px;
+  #profile {
+    grid-area: profile;
   }
+
+  #card {
+    grid-area: card;
+  }
+
+  #count {
+    grid-area: count;
+  }
+
+  #visit-history {
+    grid-area: history;
+  }
+  #infos.show  {
+    margin-top: 64px;
+    display: grid;
+    grid-template-areas:
+    'profile card card'
+    'history card card'
+    'history count count';
+    gap: 24px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.gift-modal.show {
+  position: absolute;
+  background-color: rgb(255, 228, 233);
+  height: 200px;
+  width: 100%;
+  max-width: 600px;
+  top: 50%;
+  right: 50%;
+  transform:translateX(50%);
+  z-index: 20;
+  margin: auto;
+  font: var(--title-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 24px;
+}
+
+.gift-modal img {
+  width: 30px;
 }

@@ -12,7 +12,7 @@ header img {
 @media (width >=960px) {
   header img {
     width: 7rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
