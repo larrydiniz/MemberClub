@@ -21,6 +21,13 @@ Tendo sucesso em trazer os dados de cada cliente:
 - [X] Deve ser exibido na tela um progresso com o número de cortes restantes para o prêmio;
 - [X] Deve aparecer na tela um modal de parabéns com a mensagem: “Parabéns! Seu próximo corte é gratuito!” caso o cliente tenha atingido os 10 cortes;
 
+### Tecnologias usadas
+![Badge](https://img.shields.io/static/v1?label=CSS&message=Estilo&color=3C5CA1&style=for-the-badge&logo=css3) <br/>
+![Badge](https://img.shields.io/static/v1?label=Json%20Server&message=Fake%20API&color=3D03A7&style=for-the-badge&logo=json) <br/>
+![Badge](https://img.shields.io/static/v1?label=JavaScript&message=Dinamismo&color=EBD531&style=for-the-badge&logo=javascript) <br/>
+![Badge](https://img.shields.io/static/v1?label=webpack&message=Bundler&color=cdebf9&style=for-the-badge&logo=webpack) <br/>
+![Badge](https://img.shields.io/static/v1?label=Babel&message=Compilador&color=F9DC3E&style=for-the-badge&logo=babel) <br/>
+
 ## Scripts
 
 ### `npm install`
